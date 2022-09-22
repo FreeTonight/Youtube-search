@@ -14,7 +14,6 @@ const Results = () => {
 
     const [data, isLoading, error, hasMore, loadMore, clearData] =
         useQuery(query);
-
     useEffect(() => {
         const params = new URLSearchParams(location.search);
         const query = params.get("query");
@@ -33,8 +32,8 @@ const Results = () => {
 
             {!isLoading && error !== null && (
                 <Message
-                    title="Error ocurred"
-                    message={`An error occurred, the possible reason is (${error.message})`}
+                    title="Error occurred"
+                    message={`An error occurred, the possible reason is ${error.message}`}
                 />
             )}
             {!isLoading && !error && data.length === 0 && (
