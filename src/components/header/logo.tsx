@@ -10,7 +10,7 @@ const Logo = ({ className }: Props) => {
 
     return (
         <img
-            src={"Youtube-search/images/youtube.webp"}
+            src={"/Youtube-search/images/youtube.webp"}
             alt="Logo"
             className={`w-16 cursor-pointer ${className}`}
             onClick={() => {

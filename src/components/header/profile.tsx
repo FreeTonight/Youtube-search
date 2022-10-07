@@ -6,7 +6,7 @@ const Profile = ({ className }: Props) => {
     return (
         <div className={`${className}`}>
             <img
-                src="Youtube-search/images/donkey.jpeg"
+                src="/Youtube-search/images/donkey.jpeg"
                 alt="Avatar"
                 width={40}
                 height={40}
